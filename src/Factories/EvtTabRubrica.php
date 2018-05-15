@@ -256,13 +256,13 @@ class EvtTabRubrica extends Factory implements FactoryInterface
             $newVal       = $this->std->novavalidade;
             $novaValidade = $this->dom->createElement("novaValidade");
             $this->dom->addChild(
-                $ideRubrica,
+                $novaValidade,
                 "iniValid",
                 $newVal->inivalid,
                 true
             );
             $this->dom->addChild(
-                $ideRubrica,
+                $novaValidade,
                 "fimValid",
                 ! empty($newVal->fimvalid) ? $newVal->fimvalid : null,
                 false
